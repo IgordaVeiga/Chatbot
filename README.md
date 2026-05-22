@@ -1,6 +1,17 @@
-# Chatbot
-Repositório para o desenvolvimento de um Chatbot de Whatsapp
+## Como executar o projeto
 
-Ambiente De Desenvolvimento: Visual Studio Code
+### Pré-requisitos
+- Node.js 18+
+- Conta no WhatsApp
 
-Tecnologias: Framework Node.js.
+### Instalação
+
+```bash
+# Clone o repositório
+git clone [URL_DO_SEU_REPOSITORIO]
+
+# Instale as dependências
+npm install
+
+# Execute o bot
+node src/main.js
