@@ -1,0 +1,18 @@
+{
+  "name": "chatbot-ubs-nodejs",
+  "version": "1.0.0",
+  "description": "Chatbot para Unidade Básica de Saúde - WhatsApp",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node --watch src/main.js"
+  },
+  "keywords": ["chatbot", "whatsapp", "ubs", "saude"],
+  "author": "Rafael Albuquerque, Igor Veiga",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.7"
+  }
+}
