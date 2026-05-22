@@ -1,3 +1,9 @@
+## Tecnologias Utilizadas
+Framework Node.js
+
+## Ambiente de desenvolvimento
+Visual Studio Code
+
 ## Como executar o projeto
 
 ### Pré-requisitos
