@@ -15,22 +15,57 @@ client.once('ready', () => {
     console.log("Bot está pronto!");
 });
 
+//Nós da árvore
+
+const arvore = {
+    'menu': ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+    '1':    ['1', '2', '3', '4'],
+    '2':    ['1', '2', '3', '4', '5'],
+    '3':    ['1', '2', '3', '4'],
+    '4':    ['1', '2', '3'],
+    '5':    ['1', '2', '3'],
+    '6':    ['1', '2', '3'],
+    '7':    ['1', '2', '3', '4'],
+    '8':    ['1'],
+    '9':    [],
+};
+
+//onde o usuário está
 const userState = {};
 
 //Lógica da Árvore de decisão
 
 client.on('message', async(msg) => {
+    //Definição do id da conversa e o que o usuário digitou (body)
     const chatId = msg.from;
     const body = msg.body.trim().toLocaleLowerCase();
 
+    //se o usuário está no menu (body === menu) ou o usuário não existe, então retorna o menu 
     if (body === 'menu' || !userState[chatId]) {
         userState[chatId] = 'menu'
         return client.sendMessage(chatId, messages.getMessage('10'))
     }
 
-    if (userState[chatId] === 'menu') {
-        return client.sendMessage(chatId, messages.getMessage(body))
+    const currentNode = userState[chatId]; //No atual
+    const validOptions = arvore[currentNode] ?? []; //validação se o nó esta na arvore
+
+    //verifica se a opção do body está inclusa na arvore e seus nós,se não estiver retorna o "0" (mensagem de erro)
+    if (!validOptions.includes(body)) {
+        return client.sendMessage(chatId, messages.getMessage('0'));
     }
+
+    //Nó atual igual ao menu ? se sim então apenas o número ex:"1" se não, está em um submenu então ex:NoAtual.body ou "1.2"
+    const messageKey = currentNode === 'menu' ? body : `${currentNode}.${body}`;
+
+    /* se minha o nó que o usuário digitou for na arvore diferente de vazio/indefinido e estiver no "menu" então avança para o submenu se não,
+    vai para o menu */ 
+    if (arvore[body] !== undefined && currentNode === 'menu') {
+        userState[chatId] = body;
+    } else {
+        userState[chatId] = 'menu';
+    }
+
+    return client.sendMessage(chatId, messages.getMessage(messageKey));
 })
 
 client.initialize();
