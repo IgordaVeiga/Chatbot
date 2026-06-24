@@ -268,7 +268,8 @@ Como posso ajudar você hoje?
 8️⃣ - Campanhas, ações e eventos da unidade
 9️⃣ - Outras dúvidas
 
-Digite a opção desejada:`
+Digite a opção desejada:`,
+        '9.1': `Atendimento encerrado, você está falando com o Bot agora :)`
     }
 
     getMessage(index = 0) {
