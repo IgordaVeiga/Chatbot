@@ -327,10 +327,11 @@ ${NAV_HINT}`,
 
 Por favor, descreva brevemente sua dúvida para que a nossa equipe possa orientar você da melhor forma possível.
 
-Aguarde, nossa equipe irá te responder por aqui. 😊`,
+Aguarde, nossa equipe irá te responder por aqui. 😁`,
 
-        '10': `Olá! Seja bem-vindo ao atendimento virtual da UBS do Curió
-Eu sou o CURI.IA, como posso ajudar você hoje?
+        '10': `Olá! Seja bem-vindo ao atendimento virtual da UBS do Curió 🏥
+
+Eu sou o CURI.IA 🐦, como posso ajudar você hoje?
 
 1️⃣ Horários e marcação de consultas/exames
 2️⃣ Serviços oferecidos pela UBS
@@ -344,7 +345,7 @@ Eu sou o CURI.IA, como posso ajudar você hoje?
 
 👉 Digite o número da opção desejada.`,
 
-        '9.1': `Atendimento encerrado, você está falando com o CURI.IA agora 🙂`
+        '9.1': `Atendimento encerrado, você está falando com o CURI.IA🐦 agora.`
     }
 
     getMessage(index = 0) {
