@@ -9,6 +9,8 @@ Você deseja informações sobre:
 2️⃣ - Consulta de enfermagem
 3️⃣ - Marcação de exames
 4️⃣ - Documentos necessários
+5️⃣ - Laboratório e coletas
+6️⃣ - Preventivo (PCCU)
 
 Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
 
@@ -32,6 +34,7 @@ Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`
         '1.3': `🔬 1.3 Marcação de exames:
 
 Os exames geralmente são agendados em dias específicos: Segunda-feira, Quarta-feira e Sexta-feira.
+Consultas e exames são marcados no laboratório da unidade.
 
 Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
 
@@ -45,6 +48,22 @@ Para qualquer atendimento, traga sempre:
 
 Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
 
+        '1.5': `🧪 1.5 Laboratório e coletas:
+
+- Consultas e exames são marcados no laboratório às segundas, quartas e sextas.
+- Coleta de material: das 07h15 às 11h (somente pela manhã).
+- Entrega de coleta/material: terças e quintas.
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
+        '1.6': `🩺 1.6 Preventivo (PCCU):
+
+Realizado por agendamento, todos os dias:
+- Manhã: 08h às 10h
+- Tarde: 14h às 16h
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
         '2': `🏥 Serviços oferecidos pela UBS
 
 Deseja saber mais sobre:
@@ -53,6 +72,11 @@ Deseja saber mais sobre:
 3️⃣ - Psicologia
 4️⃣ - Nutrição
 5️⃣ - Odontologia
+6️⃣ - Curativos
+7️⃣ - Imunização (vacinas)
+8️⃣ - Testes rápidos
+9️⃣ - Teste do pezinho
+🔟 - Injetáveis (intramuscular)
 
 Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
 
@@ -86,6 +110,39 @@ Atendimento odontológico preventivo, limpeza e tratamentos clínicos básicos.
 
 Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
 
+        '2.6': `🩹 2.6 Curativos:
+
+Todos os dias, das 08h às 11h e das 13h às 16h.
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
+        '2.7': `💉 2.7 Imunização (Vacinas):
+
+Atendimento por livre demanda, qualquer dia da semana. Em caso de dúvidas, procure a UBS para informações sobre horários e vacinas disponíveis.
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
+        '2.8': `🧬 2.8 Testes rápidos:
+
+Realizados todos os dias, das 08h às 11h e das 13h30 às 16h.
+- HIV
+- Hepatite B
+- Sífilis
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
+        '2.9': `👶 2.9 Teste do pezinho:
+
+Realizado das 08h às 11h.
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
+        '2.10': `💊 2.10 Injetáveis (intramuscular):
+
+Das 08h às 11h e das 13h30 às 16h.
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
         '3': `📋 Encaminhamentos e especialistas
 
 Você deseja informações sobre:
@@ -93,6 +150,7 @@ Você deseja informações sobre:
 2️⃣ - Encaminhamento para especialista
 3️⃣ - Onde dar entrada no encaminhamento
 4️⃣ - Troca de medicamentos
+5️⃣ - Regulação / entrada de exame
 
 Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
 
@@ -117,6 +175,12 @@ Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`
         '3.4': `🔄 3.4 Troca de medicamentos / Ajustes:
 
 Para reavaliar ou ajustar receitas de medicamentos contínuos, agende um atendimento médico ou de enfermagem.
+
+Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
+
+        '3.5': `📋 3.5 Regulação / Entrada de exame:
+
+Para dar entrada em exames que passam pela regulação, procure o serviço de regulação da unidade portando o encaminhamento médico, o Cartão do SUS e um documento com foto.
 
 Digite o número da opção desejada, [0] para voltar ou "menu" para o início.`,
 
