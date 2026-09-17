@@ -13,8 +13,18 @@ const STATE_FILE = path.join(DATA_DIR, 'state.json');
 // Ex: 'grupo@c.us' (grupo) ou '5511999999999@c.us' (contato). Deixe '' para desativar.
 const NOTIFY_TARGET = '';
 
+// Na Oracle Cloud (Ubuntu) o Chromium fica no snap; no Windows usa o Chrome padrão do Puppeteer.
+const puppeteerOptions = fs.existsSync('/snap/bin/chromium')
+    ? {
+          executablePath: '/snap/bin/chromium',
+          args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+          headless: true
+      }
+    : undefined;
+
 const client = new Client({
-    authStrategy: new LocalAuth()
+    authStrategy: new LocalAuth(),
+    puppeteer: puppeteerOptions
 });
 
 client.on('qr', (qr) => {
