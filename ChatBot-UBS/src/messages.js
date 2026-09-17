@@ -4,7 +4,7 @@ class Messages {
     messages = {
         '0': `❌ Opção inválida. Digite *menu* para ver as opções novamente.`,
 
-        '1': `📅 Horários e marcação de consultas/exames
+        '1': `1 . Horários e marcação de consultas/exames
 
 Escolha uma opção digitando o número:
 1️⃣ Consulta médica
@@ -66,7 +66,7 @@ Realizado por *agendamento*, todos os dias:
 
 ${NAV_HINT}`,
 
-        '2': `🏥 Serviços oferecidos pela UBS
+        '2': `2 . Serviços oferecidos pela UBS
 
 Escolha uma opção digitando o número:
 1️⃣ Médico
@@ -147,7 +147,7 @@ Das *08h às 11h* e *13h30 às 16h*.
 
 ${NAV_HINT}`,
 
-        '3': `📋 Encaminhamentos e especialistas
+        '3': `3 . Encaminhamentos e especialistas
 
 Escolha uma opção digitando o número:
 1️⃣ Encaminhamento para exames
@@ -188,7 +188,7 @@ Para dar entrada em exames que passam pela regulação, procure o *serviço de r
 
 ${NAV_HINT}`,
 
-        '4': `💊 Medicamentos e troca de receitas
+        '4': `4 . Medicamentos e troca de receitas
 
 Escolha uma opção digitando o número:
 1️⃣ Informações sobre medicamentos
@@ -215,7 +215,7 @@ Apresente a *receita original dentro da validade* (emitida pelo SUS) com o docum
 
 ${NAV_HINT}`,
 
-        '5': `👥 Informações sobre gestantes, crianças e idosos
+        '5': `5 . Informações sobre gestantes, crianças e idosos
 
 Escolha uma opção digitando o número:
 1️⃣ Gestantes
@@ -242,7 +242,7 @@ Acompanhamento de *doenças crônicas (Hiperdia)* e grupo de comunicação exclu
 
 ${NAV_HINT}`,
 
-        '6': `🗺️ Dúvidas sobre território e atendimento da ESF
+        '6': `6 . Dúvidas sobre território e atendimento da ESF
 
 Escolha uma opção digitando o número:
 1️⃣ Como descobrir sua ESF
@@ -269,7 +269,7 @@ A *ESF* (Estratégia Saúde da Família) trabalha de forma *territorial fixa*, f
 
 ${NAV_HINT}`,
 
-        '7': `🗣️ Falar com ACS ou equipe da UBS
+        '7': `7 . Falar com ACS ou equipe da UBS
 
 Escolha uma opção digitando o número:
 1️⃣ Agente Comunitário de Saúde (ACS)
@@ -303,7 +303,7 @@ Para falar com o médico ou obter *laudos específicos*, aguarde o *redirecionam
 
 ${NAV_HINT}`,
 
-        '8': `📢 Campanhas, ações e eventos da unidade
+        '8': `8 . Campanhas, ações e eventos da unidade
 
 Escolha uma opção digitando o número:
 1️⃣ Eventos atuais
@@ -323,14 +323,14 @@ As datas são divulgadas no *mural da UBS*, na *recepção* e nos *grupos de Wha
 
 ${NAV_HINT}`,
 
-        '9': `💬 Outras dúvidas
+        '9': `9 . Outras dúvidas
 
 Por favor, descreva brevemente sua dúvida para que a nossa equipe possa orientar você da melhor forma possível.
 
 Aguarde, nossa equipe irá te responder por aqui. 😊`,
 
-        '10': `👋 Olá! Seja bem-vindo ao atendimento virtual da UBS 🏥
-Como posso ajudar você hoje?
+        '10': `Olá! Seja bem-vindo ao atendimento virtual da UBS do Curió
+Eu sou o CURI.IA, como posso ajudar você hoje?
 
 1️⃣ Horários e marcação de consultas/exames
 2️⃣ Serviços oferecidos pela UBS
@@ -344,7 +344,7 @@ Como posso ajudar você hoje?
 
 👉 Digite o número da opção desejada.`,
 
-        '9.1': `Atendimento encerrado, você está falando com o Bot agora 🙂`
+        '9.1': `Atendimento encerrado, você está falando com o CURI.IA agora 🙂`
     }
 
     getMessage(index = 0) {
