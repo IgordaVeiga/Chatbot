@@ -5,7 +5,9 @@
   "main": "src/main.js",
   "scripts": {
     "start": "node src/main.js",
-    "dev": "node --watch src/main.js"
+    "dev": "node --watch src/main.js",
+    "check": "node src/validate.js",
+    "kill": "node src/kill.js"
   },
   "keywords": ["chatbot", "whatsapp", "ubs", "saude"],
   "author": "Rafael Albuquerque, Igor Veiga",
